@@ -42,16 +42,12 @@
     .bg2 {
         background: url(bg2.jpg) no-repeat center;
     }
-     /* 下記記述、メディアクエリ適用前と同じ内容でも、backgroundを再設定したので、もう一度記載する必要がある。  */
-   .bg {
-    height: 30vh;
-    /*
-    ↓正方形に近いと、幅を狭めた時も全体が表示。
-    横長ワイドだと、幅を狭めた時には中央部分しか表示されなくなる。
-    採用する写真、応じてちょうど良い頃合いになるようにトリミングする。 */
-    background-size: cover;
-    background-attachment: fixed;
-}
 
+    /* 下記記述、メディアクエリ適用前と同じ内容でも、backgroundを再設定したので、もう一度記載する必要がある。  */
+    .bg {
+        height: 30vh;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 
 }
