@@ -1,0 +1,45 @@
+/* モバイルファースト・1025px分岐の記述 */
+
+.bg1 {
+    background: url(bg1.jpg) no-repeat center;
+}
+
+.bg2 {
+    background: url(bg2.jpg) no-repeat center;
+}
+
+.bg {
+    height: 30vh;
+    /*
+    ↓正方形に近いと、幅を狭めた時も全体が表示。
+    横長ワイドだと、幅を狭めた時には中央部分しか表示されなくなる。
+    採用する写真、応じてちょうど良い頃合いになるようにトリミングする。 */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.classA {
+    background: aqua;
+    height: 700px;
+}
+
+.classB {
+    height: 500px;
+}
+
+.classC {
+    background: rgba(1, 197, 197, 0.738);
+    height: 500px;
+}
+
+@media(min-width:1025px) {
+
+    /* ↓例では一緒の写真だが、実際使用する時はメディアクエリのmi-widthなどに応じて写真のトリミングを変えてみる。  */
+    .bg1 {
+        background: url(bg1.jpg) no-repeat center;
+    }
+
+    .bg2 {
+        background: url(bg2.jpg) no-repeat center;
+    }
+}
